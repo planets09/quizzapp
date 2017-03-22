@@ -1,0 +1,50 @@
+/*font-family: 'Cuprum', sans-serif;
+font-family: 'Righteous', cursive;*/
+
+body {
+	background-image: url(../images/stacks.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.container {
+	display: block;
+	padding-top: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 65px;
+	color: #FF0080;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 35px;
+	color: #FF0080;
+	margin: 15px;
+}
+
+input {
+	padding: 10px;
+	width: 40%;
+	border-radius: 10px;
+}
+
+button {
+	margin-top: 30px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#scoreHidden {
+	display: none;
+}
+
+#scoreVisible {
+	display: inline-block;
+	font-family: 'Righteous', cursive;
+}
