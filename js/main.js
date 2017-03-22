@@ -44,10 +44,10 @@ var triviaQ = [
 
 
 for(i=0; i<triviaQ.length; i++){
-	newH4 = document.createElement('H4');
-	newInput = document.createElement('INPUT');
+	var newH4 = document.createElement('H4');
+	var newInput = document.createElement('INPUT');
+	var newText = document.createTextNode(triviaQ[i].question);
 
-	newText = document.createTextNode(triviaQ[i].question);
 	newH4.appendChild(newText);
 
 	newInput.id = "answer" + i;
@@ -61,6 +61,7 @@ function quizResults() {
 	var incorrect=0;
 
 	for(i=0; i<triviaQ.length; i++){
+
 		var userInput = document.getElementById('answer' + i.toString()).value;
 		if(userInput == triviaQ[i].answer){
 			console.log("correct");
@@ -71,17 +72,22 @@ function quizResults() {
 			incorrect++;
 		}
 	}
-	newH1 = document.createElement('H1');
+	
+	var correctH1 = document.createElement('H1');
+	var incorrectH1 = document.createElement('H1');
+	var scoreAnswers = document.getElementById('scoreboard'); 
 
-	var scoreAnswers = document.getElementById('scoreHidden'); 
-	console.log(scoreAnswers);
-	scoreAnswers.setAttribute('id', 'scoreVisible');
+	var correctText = document.createTextNode('Correct: ' + correct);
+	var incorrectText = document.createTextNode('Incorrect: '+ incorrect);
 
-	var scoreText = document.createTextNode(xxxxx);
-	newH1.appendChild(scoreText);
+	correctH1.appendChild(correctText)
+	incorrectH1.appendChild(incorrectText)
 
-	scoreAnswers.id = 'answer' + i.toString();
-	scoreHidden.appendChild(scoreAnswers);
+	scoreAnswers.appendChild(correctH1)
+	scoreAnswers.appendChild(incorrectH1)
+
+	scoreAnswers.className = 'scoreVisible';
+
 }
 
 
