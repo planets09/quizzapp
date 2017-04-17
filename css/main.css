@@ -10,6 +10,7 @@ body {
 .container {
 	display: block;
 	padding-top: 20px;
+	background-color: rgba(208,219,223,0.6);
 }
 
 h1 {
