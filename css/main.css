@@ -41,6 +41,10 @@ button {
 	margin-bottom: 10px;
 }
 
+.btn-lg {
+	margin: 20px;
+}
+
 #scoreHidden {
 	display: none;
 }

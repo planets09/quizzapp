@@ -56,6 +56,15 @@ for(i=0; i<triviaQ.length; i++){
 	quiz.appendChild(newInput);
 }
 
+function resetQuiz() {
+	document.getElementById('scoreboard').textContent= "";
+
+	var allInputs = document.getElementsByTagName('input');
+	for(var i = 0; i < allInputs.length; i++){
+		allInputs[i].value="";
+	}
+}
+
 function quizResults() {
 	var correct=0;
 	var incorrect=0;
@@ -89,6 +98,8 @@ function quizResults() {
 	scoreAnswers.className = 'scoreVisible';
 
 }
+
+
 
 
 
