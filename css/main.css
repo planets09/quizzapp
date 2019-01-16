@@ -2,7 +2,7 @@
 font-family: 'Righteous', cursive;*/
 
 body {
-	background-image: url(../images/stacks.jpg);
+	background-image: url("../images/stacks-min.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;	
 }
